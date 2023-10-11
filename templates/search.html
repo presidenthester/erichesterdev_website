@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+
+
+
+
+{% block content %}
+<div class="content">
+    
+       
+    
+    
+
+
+
+    <br/>
+    
+    
+    <br/>
+    {% if posts %}
+    {% for post in posts  %}
+    <center>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="card">
+                        <button class="card-button" onclick="location.href='{{url_for('post_page', id=post.id)}}'">
+                            <div class="card-content">
+    
+                                <h2>{{ post.title }}</h2>
+                                <h6>By: {{ post.poster.name }}</h6>
+                                <h6>Posted on: {{ post.date_posted.strftime("%d/%b/%Y, %I:%M:%S %p") }}</h6><br/>
+                                <i><p>{{ post.slug }}</p></i>
+                                 
+                            </div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <br/>
+</center>
+    {% endfor %}
+
+    {% else %}
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+
+                <center><h2>Sorry your search for: <strong><i>'{{ searched }}'</i></strong> gave 0 results</h2></center>
+                
+            </div>
+        </div>
+    </div>
+    
+
+    {% endif %}
+
+
+{% endblock %}
+</div>

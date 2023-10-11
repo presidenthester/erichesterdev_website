@@ -1,0 +1,191 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+
+<div class="content">
+
+    <div class="home">
+
+    <img src="{{ url_for('static', filename='images/longBeach.jpg')}}" class="Long Beach">
+
+    
+
+    </div>
+
+    
+
+
+    
+    
+    
+        
+        
+        
+    
+
+
+    
+ 
+
+
+    
+    
+    <center>
+        <div class="row justify-content-center card-2">
+            <div class="row justify-content-center">
+                <div class="col-12">
+                    <div class="col-8">
+
+                    <br/>
+                    <br/>
+                    
+
+                        <h1>Welcome to erichesterdev.com!</h1>
+                        <h3>Let's code!</h3>
+                    
+                    <br/>
+                    <br/>
+
+                    </div>
+                </div>
+             </div>
+            </div>
+
+        <br/>
+        <div class="row justify-content-center card">
+
+            
+
+
+            <div class="row justify-content-center">
+                <div class="col-12">
+                    <div class="col-8">
+
+                   
+
+                    </div>
+                </div>
+             </div>
+        
+            
+
+
+
+
+                    
+                
+                
+                   
+                
+     
+
+
+
+<br/>
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col">
+            <div>
+                <button class="card-button" onclick="location.href='{{url_for('portfolio')}}'">
+                <div class="card-body">
+                    <div class="row index-card">
+                        <div class="col-md-9">
+                            <h2>My Portfolio</h2>
+                            <h4>View a collection of my software development projects.</h4>
+                            <h5>Each project page contains a link to my project's GitHub repo.</h5>
+                        </div>
+                        <div class="col-md-3 text-right">
+                            <img src="{{ url_for('static', filename='images/portfolio_card.png')}}" class="card_image">
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+<br/>
+<br/>
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col">
+            <div>
+                <button class="card-button" onclick="location.href='{{url_for('about')}}'">
+                <div class="card-body">
+                    <div class="row index-card">
+                        <div class="col-md-9">
+
+                            <h2>Read My Story</h2>
+
+                            <h4>Learn about my beginnings as a software engineer 
+                                and my love of programming.</h4>
+                            
+                        </div>
+                        
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+<br/>
+<br/>
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col">
+            <div>
+                <button class="card-button" onclick="location.href='{{url_for('contact')}}'">
+                <div class="card-body">
+                    <div class="row index-card">
+                        <div class="col-md-9">
+                            <h2>Let's Get In Touch</h2>
+                            <h4>Have questions? Want to inquire about a project?
+                                You can reach me here.
+                            </h4>
+                            <h5>This site does not save any of your data.  Data is used for email purposes only.</h5>
+                        </div>
+                        <div class="col-md-3 text-right">
+                            <img src="{{ url_for('static', filename='images/email2.png')}}" class="card_image">
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+<br/>
+<br/>
+<br/>
+<br/>
+
+
+
+
+</div>
+</center>
+
+<br/>
+<br/>
+
+<footer class="footer">
+    <div class="container">
+        <p>
+            &copy; 2023 erichesterdev.com | Contact: <a href="{{ url_for('contact') }}">click here</a>
+            
+        </p>
+    </div>
+</footer>
+    
+    
+
+{% endblock %}
+</div>

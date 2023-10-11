@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="content">
+
+    <br/>
+    
+    <div class="container d-flex col-7 justify-content-center">
+        <center><h1>Update User:</h1></center>
+    </div>
+    
+    <br/>
+
+    
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8"> 
+                <div class="card">
+                    <div class="card-body">
+
+                        <form method="POST" action="/update/{{ name_to_update.id }}">
+                            {{ form.hidden_tag() }}
+
+                            <div class="form-group">
+                                {{ form.name.label(class="form-label") }}
+                                {{ form.name(class="form-control", value=name_to_update.name) }}
+                            </div>
+
+                            <br/>
+
+                            <div class="form-group">
+                                {{ form.username.label(class="form-label") }}
+                                {{ form.username(class="form-control", value=name_to_update.username) }}
+                            </div>
+
+                            <br/>
+
+                            <div class="form-group">
+                                {{ form.email.label(class="form-label") }}
+                                {{ form.email(class="form-control", value=name_to_update.email) }}
+                            </div>
+
+                            <br/>
+
+                            {{ form.submit(class="btn btn-primary") }}
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+  
+
+
+{% endblock %}

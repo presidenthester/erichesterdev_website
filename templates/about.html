@@ -1,0 +1,104 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="content">
+    
+    <br/>
+
+    <div class="d-flex justify-content-center">
+        
+        <img src="{{ url_for('static', filename='images/me_clr.JPG')}}" class="index_img">
+      
+    </div>
+
+    <br/>
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8"> 
+        
+        <center>
+            <h2>My story:</h2>
+        </center>
+
+        <br/>
+
+    
+        <p>
+
+            For as long as I can remember, I have been fascinated with how things work. This goes for mechanical things such as 
+            cars and airplanes to technical things like computers and video games. If something does anything, I want to know how.
+            My first memory of this was during my childhood when my grandfather gave me his old Apple II computer. This also came
+            with a book with example programs that the reader could use to create mini programs on their own. I was young but 
+            very excited. This book had the answers to my overall question: 'How does this work?
+
+            <br/>
+            <br/>
+            
+            This was also the beginning of my fascination with computers and software. Being full of confidence, I found the 
+            biggest program in the book. It was huge! I remember that the program was somewhere in the range of 300 lines of code!
+            Laughable, now that I know how big programs can get. But I pressed on and carefully typed out every line of code.
+            When I was finished, I ran the program and got nothing but a screen full of errors. I tried to decipher the meaning
+            of the errors but was at a loss, so I gave up. As I grew up, my fascination never wavered, and as technology got 
+            increasingly more advanced, I decided to do something about my fascination.
+
+            <br/>
+            <br/>
+            
+            After years of avoiding college for a myriad of reasons, I made the concrete decision to get a degree in software 
+            development. I could not wait to dive deep into the topic and finally convert my curiosity and fascination into 
+            knowledge and application. I realized that I would need a lot of time to dedicate to this endeavor, so I made the 
+            decision to quit my full-time job in favor of a 'part-time' job delivering pizzas at a local pizzeria. I had a feeling
+            this particular location had high traffic, which meant great tip potential. The feeling paid off, literally. 
+            Now I had, accompanying my will, the means to pursue my goal.
+
+            <br/>
+            <br/>
+
+            The college experience was mostly positive. The best part was learning about the topics I loved and getting many 
+            opportunities to create things using my newfound knowledge. Before I knew it, I had accomplished my goal and obtained
+            my degree. That brings us to this website.
+
+            <br/>
+            <br/>
+
+            I began applying for jobs the day after I graduated.  A week later I was rejected by all of the companies.  Sad, but not unexpected.
+            I did notice a trend in the most the applications though.  They often ask for a website, I didn't have one.  They also want to see 
+            a portfolio of some sort usually GitHub, I didn't have one, except for my college projects but I felt those were to basic and not
+            worhty of showing off.  So I decided to make this website from scratch as a way to kick off my portfolio and use it as a way to shpw 
+            the world the things I am working on.  
+
+            <br/>
+            <br/>
+
+            Thank you for visiting my site, I can't wait to continue building my skills and sharing them with you. Feel free to reach out 
+            to me via the <a href="{{url_for('contact')}}">contact</a> page or take a look at my work on the <a href="{{url_for('portfolio')}}">portfolio</a> page.
+
+
+            
+            
+
+        
+        
+        </p>
+
+        
+            
+        
+        </div>
+    </div>
+</div>
+
+
+<footer class="footer">
+    <div class="container">
+        <p>
+            &copy; 2023 erichesterdev.com | Contact: <a href="{{ url_for('contact') }}">click here</a>
+            
+        </p>
+    </div>
+</footer>
+
+{% endblock %}
+</div>

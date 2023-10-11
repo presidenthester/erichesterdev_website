@@ -1,0 +1,65 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="content">
+
+    {% if title %}
+    <div class="container d-flex col-7 justify-content-center">
+        <center><h1>Blog Edited:</h1></center>
+    </div>
+
+    <br/>
+    {% else %}
+
+    <div class="container d-flex col-7 justify-content-center">
+        <center><h1>Edit Blog Post:</h1></center>
+    </div>
+    
+    <br/>
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-8"> 
+            <div class="card">
+                <div class="card-body">
+
+                    <form method="POST">
+                        {{ form.hidden_tag() }}
+
+                        <div class="form-group">
+                            {{ form.title.label(class="form-label") }}
+                            {{ form.title(class="form-control") }}
+                        </div>
+
+                        <br/>
+
+                        
+
+                        <div class="form-group">
+                            {{ form.slug.label(class="form-label") }}
+                            {{ form.slug(class="form-control") }}
+                        </div>
+
+                        <br/>
+
+                        <div class="form-group">
+                            {{ form.content.label(class="form-label") }}
+                            {{ form.content(class="form-control", rows=10) }}
+                        </div>
+
+                        <br/>
+
+                        {{ form.submit(class="btn btn-primary") }}
+
+                    </form>
+                    {{ ckeditor.load() }}
+                    {{ ckeditor.config(name='content') }}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endif %}
+
+{% endblock %}

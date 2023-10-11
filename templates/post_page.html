@@ -1,0 +1,70 @@
+
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="content">
+
+    
+    <br/>
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+
+                <center><h1>{{ post.title }}</h1></center>
+                <center><p>By: {{ post.poster.name }}
+                    <br/>
+                    Posted on: {{ post.date_posted.strftime("%d/%b/%Y") }}
+                </p></center>
+                
+                
+            </div>
+        </div>
+    </div>
+
+    <br/>
+    <br/>
+    <br/>
+
+    <div class="container border border-light w-50 p-2">
+        <div class="justify-content-center start-0">
+           
+
+                <h6>{{ post.content|safe }}</h6>
+
+                <br/>
+                <br/>
+                <br/>
+
+               
+            
+        </div>
+    </div>
+
+    <br/>
+    <br/>
+    <br/>
+    
+    {% if post.poster_id == current_user.id %}
+    <div class="container w-50 p-2">
+        <div class="row justify-content-start-0">
+            <div class="col-md-8">
+                
+                <button class="btn btn-primary" onclick="location.href='{{url_for('portfolio')}}'">Back to Portfolio</button>
+                <button class="btn btn-secondary" onclick="location.href='{{url_for('edit_post', id=post.id)}}'">Edit Post</button>
+                <button class="btn btn-danger" onclick="location.href='{{url_for('delete_post', id=post.id)}}'">Delete Post</button>
+                
+                
+                
+                
+
+            </div>
+        </div>
+    </div>
+    {% endif %}
+
+
+
+    
+{% endblock %}
+</div>
