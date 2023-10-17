@@ -1,13 +1,6 @@
-.card_image {
-    border-radius: 5%;
-    max-width: 100%;
-    max-height: 100%;
-    text-align: right;
-    border-radius: 0%;
-    border: solid 1px;
-}
 
-  .index_img {
+
+.index_img {
     border-radius: 50%;
     max-width: 15%;
     max-height: 15%;
@@ -17,9 +10,11 @@
 
 
 .slide-dim{
-    width: 1920px;
-    height: 880px;
-    max-width: 2560px;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    margin-top: 50px;
+    
 }
 
 .navbar-custom {
@@ -31,48 +26,86 @@
     z-index: 1000;
 }
 
-.content {
-    margin-top: 80px !important;
+.nav-link{
+    color: #e7e7e7;
 }
 
-.carousel-control-prev, .carousel-control-next {
-    font-size: 40px; /* Change the size to your desired value */
-    color: #FF5733; /* Change the color to your desired color */
-    z-index: 1;
+.navbar-brand{
+    color: #e7e7e7;
 }
+
+.content{
+    
+    margin-top: 0px !important;
+    margin-bottom: 0px;
+}
+
+
 
 .card-button {
     border: none;
     padding: 0;
-    background-color: hsla(0, 0%, 3%, 0.1); 
+    background-color: hsla(0, 100%, 100%, 0.04); 
     cursor: pointer;
     text-align: left;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: auto;
+    top: 50%;
+    left: 50%;
     
+    
+    
+}
+
+#carouselExample{
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    margin-top: 0px;
+}
+
+
+
+
+.card-button-post {
+    border: none;
+    padding: 0;
+    background-color: hsla(0, 16%, 96%, 0.7); 
+    cursor: pointer;
+    text-align: left;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     
 }
 .card-div{
-    width: 1200px;
-    height: 800px;
+    width: 100%;
+    height: auto;
     color: #ffffff;
+    margin-top: 50%;
+    
 }
+
+
+
 .card-div-content{
+    margin-left: 5%;
+    margin-bottom: 60%;
+}
+
+.card-div-content-port{
     margin-left: 5%;
     margin-bottom: 80%;
 }
 
-.card-div-content-port{
-    margin-right: 95%;
-    margin-bottom: 80%;
-}
-
 .card-div-content-2{
-    margin-left: 35%;
-    margin-top: 40%;
+    left: 35%;
+    bottom: 25%;
+   
+    
 }
 
 .card-div-content-3{
@@ -82,11 +115,14 @@
 
 
 
+
+
+
 .card {
-    background-image: linear-gradient(to bottom left,#046697,#057ab4,#076ea1,#0389cc,#0389cc,#086594,#0672a8 ,#065f8b); 
+    background-color:#cecece; 
     display: flex;
     width: 75%;
-    height: 200%; 
+    height: 100%; 
 }
 
 .card-2 {
@@ -103,20 +139,13 @@
     padding: 20px;
 }
 
-.dash-card{
-    width: 50%;
-    margin-left: 5em;
-    
-    
-}
 
-.div-test {
-    background-color: #eb79db;
-}
+
+
 
 .index-card {
     padding: 10px;
-    margin: 10pxpx;
+    margin: 10px;
     
 }
 
@@ -125,31 +154,15 @@
     color: #ffffff; /* Light text color */
     text-align: center;
     padding: 5px;
-    position: fixed; /* Fixed position */
-    bottom: 0;
+    position: relative; /* Fixed position */
     width: 100%;
-    margin-top: 5px;
+    
+    
     
 }
 
-.home{
-  background-image: url('static/images/longBeach.jpg');
-  object-fit: fill;
-  background-size: cover;
-  width: 100%; 
-  height: auto;
-  background-color: rgb(255, 238, 0);
-}
 
-.long-beach{
-    
-  width: 100%;
-  height: 10%;
-  object-fit: fill;
-    
-   
-    
-}
+
 
 
 @media (max-width: 390px) {

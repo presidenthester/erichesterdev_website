@@ -5,12 +5,14 @@
 
 <div class="content">
     
-    
+    <br/>
+    <br/>
+   
 
     <div class="d-flex justify-content-center">
         
         
-        <img src="{{ url_for('static', filename='images/me_clr.JPG')}}" class="index_img">
+        <img src="{{ url_for('static', filename='images/me_blk_wht.JPG')}}" class="index_img">
       
     </div>
 
@@ -76,7 +78,7 @@
 
             Thank you for visiting my site, I can't wait to continue building my skills and sharing them with you. Feel free to reach out 
             to me via the <a href="{{url_for('contact')}}">contact</a> page or take a look at my work on the <a href="{{url_for('portfolio')}}">portfolio</a> page.
-
+          
 
             
             
@@ -84,6 +86,11 @@
         
         
         </p>
+
+        <br/>
+        <br/>
+        <br/>
+        <br/>
 
         
             
@@ -93,13 +100,14 @@
 </div>
 
 
+
 <footer class="footer">
-    <div class="container">
+   
         <p>
             &copy; 2023 erichesterdev.com | Contact: <a href="{{ url_for('contact') }}">click here</a>
             
         </p>
-    </div>
+   
 </footer>
 
 {% endblock %}
