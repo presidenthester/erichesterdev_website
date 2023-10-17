@@ -304,12 +304,13 @@ def update(id):
         
         try:
             db.session.commit()
+            
             return render_template('update.html', form=form, name_to_update=name_to_update)
         except:
+            
             return render_template('update.html', form=form, name_to_update=name_to_update)
     
-            form.name.data  = name_to_update.name  
-            form.email.data = name_to_update.email
+            
     
     else:
         return render_template('update.html', form=form, name_to_update=name_to_update, id=id)

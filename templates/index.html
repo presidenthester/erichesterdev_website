@@ -4,184 +4,135 @@
 
 
 <div class="content">
+   
 
-    <div class="home">
-
-    <img src="{{ url_for('static', filename='images/longBeach.jpg')}}" class="Long Beach">
-
-    
-
+<div id="carouselExampleIndicators" class="carousel slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
     </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="{{url_for('static', filename='images/website_cpu.png')}}" class="d-block w-100 slide-dim" alt="CPU">
+        <div class="carousel-caption d-none d-md-block">
+            <button class="card-button card-div" onclick="location.href='{{url_for('index')}}'">
 
-    
+                         
+       <div class="card-div"> 
+           <div class="card-div-content">  
 
+               <h1>Welcome to erichesterdev.com!</h1>
 
-    
-    
-    
-        
-        
-        
-    
+               <div class="card-div-content-2">
 
-
-    
- 
-
-
-    
-    
-    <center>
-        <div class="row justify-content-center card-2">
-            <div class="row justify-content-center">
-                <div class="col-12">
-                    <div class="col-8">
-
-                    <br/>
-                    <br/>
-                    
-
-                        <h1>Welcome to erichesterdev.com!</h1>
-                        <h3>Let's code!</h3>
-                    
-                    <br/>
-                    <br/>
-
-                    </div>
-                </div>
-             </div>
-            </div>
-
-        <br/>
-        <div class="row justify-content-center card">
-
-            
-
-
-            <div class="row justify-content-center">
-                <div class="col-12">
-                    <div class="col-8">
-
+                   <h2>A place to share my thoughts on everything tech,</h2>
+                   <h4>and share the projects I have done.</h4>
                    
-
-                    </div>
-                </div>
-             </div>
+               </div>
+           </div>
+       </div> 
+      </div>
         
-            
+      </div>
 
 
+      <div class="carousel-item">
+        <img src="{{url_for('static', filename='images/website_ram.png')}}" class="d-block w-100 slide-dim" alt="ram">
+        <div class="carousel-caption d-none d-md-block">
+            <button class="card-button card-div" onclick="location.href='{{url_for('portfolio')}}'">
 
+                         
+       <div class="card-div"> 
+           <div class="card-div-content">  
 
-                    
-                
-                
+               <h1>My Portfolio!</h1>
+
+               <div class="card-div-content-3 text-center">
+
+                   <h2>I work to make my ideas a digital reality</h2>
+                   <h4>All projects on this site have alink to my GitHub page.</h4>
                    
-                
-     
+               </div>
+           </div>
+       </div> 
+      </div>
+        
+      </div>
 
 
+      <div class="carousel-item">
+        <img src="{{url_for('static', filename='images/website_hardrive.png')}}" class="d-block w-100 slide-dim" alt="hdd">
+        <div class="carousel-caption d-none d-md-block">
+            <button class="card-button card-div" onclick="location.href='{{url_for('about')}}'">
 
-<br/>
+                         
+       <div class="card-div"> 
+           <div class="card-div-content">  
 
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col">
-            <div>
-                <button class="card-button" onclick="location.href='{{url_for('portfolio')}}'">
-                <div class="card-body">
-                    <div class="row index-card">
-                        <div class="col-md-9">
-                            <h2>My Portfolio</h2>
-                            <h4>View a collection of my software development projects.</h4>
-                            <h5>Each project page contains a link to my project's GitHub repo.</h5>
-                        </div>
-                        <div class="col-md-3 text-right">
-                            <img src="{{ url_for('static', filename='images/portfolio_card.png')}}" class="card_image">
-                        </div>
-                    </div>
-                </div>
-                
-            </div>
-        </div>
+               <h1>Read my story</h1>
+
+               <div class="card-div-content-2">
+
+                   <h2>i have written about my love for programming starting at an early age,</h2>
+                   <h4>and how that led my path to be a professional software engineer.</h4>
+                   
+               </div>
+           </div>
+       </div> 
+      </div>
+        
+      </div>
+
+
+      <div class="carousel-item">
+        <img src="{{url_for('static', filename='images/website_gpu.png')}}" class="d-block w-100 slide-dim" alt="gpu">
+        <div class="carousel-caption d-none d-md-block">
+            <button class="card-button card-div" onclick="location.href='{{url_for('contact')}}'">
+
+                         
+       <div class="card-div"> 
+           <div class="card-div-content">  
+
+               <h1>Let's get in touch!</h1>
+
+               <div class="card-div-content-2">
+
+                   <h2>If you have any questions or have an interest in collaborating,</h2>
+                   <h4>you can reach me here.</h4>
+                   
+               </div>
+           </div>
+       </div> 
+      </div>
+
+
     </div>
-</div>
-
-<br/>
-<br/>
-
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col">
-            <div>
-                <button class="card-button" onclick="location.href='{{url_for('about')}}'">
-                <div class="card-body">
-                    <div class="row index-card">
-                        <div class="col-md-9">
-
-                            <h2>Read My Story</h2>
-
-                            <h4>Learn about my beginnings as a software engineer 
-                                and my love of programming.</h4>
-                            
-                        </div>
-                        
-                    </div>
-                </div>
-                
-            </div>
-        </div>
-    </div>
-</div>
-
-<br/>
-<br/>
-
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col">
-            <div>
-                <button class="card-button" onclick="location.href='{{url_for('contact')}}'">
-                <div class="card-body">
-                    <div class="row index-card">
-                        <div class="col-md-9">
-                            <h2>Let's Get In Touch</h2>
-                            <h4>Have questions? Want to inquire about a project?
-                                You can reach me here.
-                            </h4>
-                            <h5>This site does not save any of your data.  Data is used for email purposes only.</h5>
-                        </div>
-                        <div class="col-md-3 text-right">
-                            <img src="{{ url_for('static', filename='images/email2.png')}}" class="card_image">
-                        </div>
-                    </div>
-                </div>
-                
-            </div>
-        </div>
-    </div>
-</div>
-
-<br/>
-<br/>
-<br/>
-<br/>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+   
+  </div>
+  
 
 
-
-
-</div>
-</center>
-
-<br/>
-<br/>
+  
 
 <footer class="footer">
+    
     <div class="container">
+      
         <p>
             &copy; 2023 erichesterdev.com | Contact: <a href="{{ url_for('contact') }}">click here</a>
             
         </p>
+       
     </div>
 </footer>
     
