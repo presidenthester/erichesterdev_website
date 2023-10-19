@@ -40,6 +40,13 @@
     margin-bottom: 0px;
 }
 
+.pages{
+
+  
+    margin-top: 70px !important;
+    margin-bottom: 0px;
+}
+
 
 
 .card-button {
@@ -119,7 +126,7 @@
 
 
 .card {
-    background-color:#cecece; 
+    background-color:#f3f2f2; 
     display: flex;
     width: 75%;
     height: 100%; 
@@ -150,16 +157,16 @@
 }
 
 .footer {
-    background-color: #292e33; /* Dark background color */
-    color: #ffffff; /* Light text color */
+    background-color: #292e33;
+    color: #ffffff;
     text-align: center;
     padding: 5px;
-    position: relative; /* Fixed position */
+    position: fixed; 
     width: 100%;
-    
-    
-    
+    bottom: 0; 
 }
+
+
 
 
 

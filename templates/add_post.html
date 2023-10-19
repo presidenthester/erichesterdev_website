@@ -10,18 +10,24 @@
     </div>
 
     <br/>
+    
     {% else %}
+
     {% if current_user.is_authenticated %}
-    <div class="container d-flex col-7 justify-content-center">
+
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    
+    <div class="container d-flex col-7 justify-content-center ">
         <center><h1>Add Blog Post:</h1></center>
     </div>
     
     <br/>
 
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-8"> 
-                <div class="card">
+    
+                <div class="card mx-auto">
                     <div class="card-body">
 
                         <form method="POST" >
